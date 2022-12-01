@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --font1:'Red Hat Display', sans-serif;
+    --cor1:hsl(225, 100%, 94%);
+    --cor2:hsl(245, 75%, 52%);
+    --cor3:hsl(225, 100%, 98%);
+    --cor4:hsl(224, 23%, 55%);
+    --cor5:hsl(223, 47%, 23%);
+}
+/*
+- Font size (paragraph): 16px
+*/
+@media screen and (min-width:601px){
+    body,html{
+        display: block;
+        width: 100vw;
+        height: 98vh;
+    }
+    main{
+        display: flex;
+        width: 100vw;
+        height: 98vh;
+        justify-content: center;
+        margin: 0 auto;
+   }
+   section.box{
+    display: block;
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 20px;
+   }
+   .imagem{
+    display: none;
+   }
+   .anuncio{
+    display: none;
+   }
+}

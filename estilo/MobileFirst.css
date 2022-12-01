@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+font-face{
+    font-family: 'Red Hat Display', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font1:'Red Hat Display', sans-serif;
+    --cor1:hsl(225, 100%, 94%);
+    --cor2:hsl(245, 75%, 52%);
+    --cor3:hsl(225, 100%, 98%);
+    --cor4:hsl(224, 23%, 55%);
+    --cor5:hsl(223, 47%, 23%);
+}
+/*
+- Font size (paragraph): 16px
+*/
+@media (max-width: 600px) {
+    body,html{
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 98vh;
+
+    }
+    section{
+        display: block;
+        border-radius: 20px;
+        width: 350px;
+        height: 600px;
+        background-color: white;
+        overflow: hidden;
+        
+    }
+    h1{
+        font-family: var(--font1);
+        font-size: 21px;
+        font-weight: 900;
+        text-align: center;
+        color: hsl(223, 47%, 23%) ;
+        padding-bottom: 15px;
+    }
+    h2{
+        display: block;
+        font-family: var(--font1);
+        font-weight: 900;
+        font-size: 16px;
+        color: var(--cor5);
+        white-space: nowrap;
+        padding-top: 10px;
+        
+    }
+    p{
+        font-family: var(--font1);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--cor4);
+        text-align: center;
+
+    }
+    .imagem{
+        display: block;
+        width: 350px;
+        height: 200px;
+        justify-content: center;
+        background-size: contain;
+        overflow: visible;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+    .anuncio{
+        display: block;
+        width:350px;
+        height: 400px;
+    }
+    .titulo{
+        padding-top: 5px;
+    }
+    .text{
+        padding:0px 30px 40px 30px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .plano{
+        display: flex;
+        margin: 0 auto;
+        background-color: var(--cor3);
+        border-radius: 15px;
+        height: 80px;
+        width: 325px;
+        align-items: flex-start;
+        
+    }
+    .music{
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 10px 10px;
+    }
+    
+    .preco{
+        display: block;
+        align-self: flex-start;
+        padding-top: 40px;
+        top: 25%;
+        left: 5%;
+        transform: translate(-120%, -2.5%);
+    }
+    .trocar{
+        display: block;
+        font-family: var(--font1);
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--cor2);
+        text-decoration: underline;
+        overflow: visible;
+        padding-top: 8px;
+        transform:translate(-25%, 100%);
+        
+    }
+    .trocar:hover{
+        text-decoration: none;
+    }
+    .ilust{
+        width: 350px;
+        height: 175px;
+    }
+    .botao{
+        display: flex;
+        background-color: var(--cor2);
+        color: white;
+        font-family: var(--font1);
+        font-weight: 900;
+        font-size: 1em;
+        text-decoration: none;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+
+        width: 325px;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-top: 15px;
+
+        border-radius: 15px;
+        justify-content: center;
+    }
+    .botao:hover{
+        background-color: var(--cor4);
+    }
+    .cancel{
+
+        display: block;
+        text-decoration: none;
+        font-family: var(--font1);
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+
+        color: var(--cor4);
+    }
+    .cancel:hover{
+        text-decoration: underline;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
